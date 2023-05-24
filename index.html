@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js" defer></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+      <img src="images\logo.png" class="logo"/>
+     <span style="padding-left:300px;"></span>
+      <a href='index.html' style="text-decoration:none; color: var(--dark-grayish-blue);">Home</a>
+      <div class="categories">
+        <!-- <a href="#" style="text-decoration:none; color: var(--dark-grayish-blue);">Categories</a> -->
+        <select id="category-filter" onchange="filterProductsByCategory()">
+          <option value="">All Categories</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+          <option value="electronics">Electronics</option>
+        </select>
+      </div>        
+      <a href='cart.html' style="text-decoration:none; color: var(--dark-grayish-blue);" id="cart">Cart  
+        <small id="cart-counter" style="color: #f0a753; font-size: medium;">0</small>
+        <!-- <ul id="cart-items"></ul> -->
+      </a>
+      <a href='about.html' style="text-decoration:none; color: var(--dark-grayish-blue);">About Us</a>
+      <a href='contact.html' style="text-decoration:none; color: var(--dark-grayish-blue);">Contact</a>
+      <a href='terms.html' style="text-decoration:none; color: var(--dark-grayish-blue);">Terms of Service</a>
+      <img src="images\person.png" class="person" />
+    </div>
+    <div class="auto">
+      <input type="search" placeholder="Find your products" id="search-bar" oninput="handleSearchInput()" />
+      <ul class="autocomplete" id="autocomplete-list"></ul>
+      <button onclick="search()">search</button>
+    </div>  
+    <div class="container">
+      <h1>
+        Shop with Confidence, Discover Endless Possibilities
+        <img
+          src="images\shopping-removebg-preview.png"
+          class="face"
+          style="width: 40%"
+        />
+      </h1>
+      <h2 style="text-align: center">Products</h2>
+    <div class= "product-list" id="product-list"></div>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+    </div>
+  </div>
+  <!-- Modal for displaying product details -->
+  <div id="product-modal" style="display: none;">
+    <div id="product-modal-content">
+      <span class="close" onclick="closeProductModal()">&times;</span>
+      <div id="product-details"></div>
+      <button onclick="addToCart(selectedProductId)">Add to Cart</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 My E-commerce Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
