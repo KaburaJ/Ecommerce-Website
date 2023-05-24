@@ -211,7 +211,7 @@ body {
   }
   .p{
     display: block;
-    padding: .5em;
+    padding: .9em;
   }
   
   p>span{
@@ -243,6 +243,12 @@ body {
     border: 1px solid #888;
     width: 60%;
     font-size: large;
+  }
+
+  .close{
+    margin-left: 700px;
+    font-size: xx-large;
+    font-weight: bolder;
   }
 
   footer {
