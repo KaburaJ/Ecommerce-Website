@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Ecommerce-Website</title>
 </head>
 <body>
   <h1>Ecommerce-Website</h1>
   <img src="https://github.com/KaburaJ/Ecommerce-Website/blob/main/eco1.PNG" alt="Screenshot 1">
+  <br>
   <img src="https://github.com/KaburaJ/Ecommerce-Website/blob/main/eco2.PNG" alt="Screenshot 2">
   <h2>Description</h2>
   <p>This repository contains an ecommerce website with the following functionalities:</p>
