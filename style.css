@@ -47,6 +47,15 @@ body {
   
   #headerlinks { width: 600px; }
   #headerlinks li { width: 100px; display: inline-block; }
+
+  select{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: .8rem;
+    background-color: rgba(238, 221, 205, 1);
+    /* font-size:small; */
+  }
   
   .cart {
     width: 3%;
@@ -78,7 +87,7 @@ body {
     height:38px;
   }
   
-  .autocomplete {
+  /* .autocomplete {
     position: absolute;
     z-index: 1;
     background-color: #f9f9f9;
@@ -97,7 +106,7 @@ body {
   
   .autocomplete li:hover {
     background-color: #e9e9e9;
-  }
+  } */
   
   
   button {
@@ -177,6 +186,16 @@ body {
     padding-bottom: 20px;
     transition: .3s ease-in-out;
   }
+  .div{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 1px #e5e3e3;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    transition: .3s ease-in-out;
+  }
   
   .cart small{
     position: absolute;
@@ -190,6 +209,7 @@ body {
     background-color: #f3b772;
     color: #f3b772;
   }
+  
   
   .product-lists:hover{
     transform: scale(1.02);
@@ -208,40 +228,41 @@ body {
   .product-list h3{
     margin-top: .75em;
     display: block;
-    color: #f3b772;
+    color: #884b06;
     font-size: 1em;
     margin-bottom: .75em;
     padding: .5em;
     /* background-color: white; */
   }
-  
+ 
   .product-list>p{
     display: block;
-    text-transform: capitalize;
+    text-transform: capitalize();
     padding: .5em;
   }
-  .fa-solid.fa-bars {
+  /* .fa-solid.fa-bars {
     display: block;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 2%;
     transform: translate(-50%, 50%);
-    /* z-index: 1; */
-  }
+    z-index: 1;
+  } */
   .p{
     display: block;
     padding: .9em;
+    color: #f3b772;
   }
   
   p>span{
-    color: #f3b772;
+    background-color: #f3b772;
   }
   
   .product-list button{
     margin: .5em;
     padding: .5em;
-    color: black;
+    color: white;
     
   }
   
@@ -273,6 +294,11 @@ body {
   }
 }
   
+#product-modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
   #product-modal {
     display: none;
     position: fixed;
