@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ecommerce-Website</title>
 </head>
 <body>
   <h1>Ecommerce-Website</h1>
