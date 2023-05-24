@@ -18,7 +18,7 @@ function fetchProductsByCategory(category) {
     });
 }
 
-// Function to display products
+// Function to display all products
 function displayProducts(products) {
   const productList = document.getElementById("product-list");
   productList.innerHTML = "";
@@ -28,7 +28,7 @@ function displayProducts(products) {
     productItem.innerHTML = `
         <img src="${product.image}"/>
           <h3>${product.title}</h3>
-          <p>Category: ${product.category}</p>
+          <p>${product.category}</p>
           <p>Price: $${product.price}</p>
           <button onclick="openProductModal(${product.id})">View Details</button>
           <hr>
@@ -46,7 +46,7 @@ function fetchProductDetails(productId) {
       productDetails.innerHTML = `
           <img src="${product.image}"/>
             <h3>${product.title}</h3>
-            <p>Category: ${product.category}</p>
+            <p>${product.category}</p>
             <p>Price: $${product.price}</p>
           `;
     });
