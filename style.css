@@ -130,6 +130,24 @@ body {
     justify-content: center;
     gap: 1rem;
   }
+
+  
+  .face {
+    /* animation: rotate 5s infinite linear; */
+    width: 200px; /* Adjust the width and height according to your image size */
+    height: 200px;
+    position: relative;
+  }
+  
+  
+  .image-rotation img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
   .face{
     border: none;
     margin-bottom: -0.5rem;
@@ -139,7 +157,8 @@ body {
     gap: 60px;
     width: 60%;
   }
-  
+
+
   .product-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -193,6 +212,7 @@ body {
     font-size: 1em;
     margin-bottom: .75em;
     padding: .5em;
+    /* background-color: white; */
   }
   
   .product-list>p{
@@ -222,7 +242,36 @@ body {
     margin: .5em;
     padding: .5em;
     color: black;
+    
   }
+  
+  .product-list button:hover{
+    animation: wiggle 2s linear infinite;
+  }
+  /* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
   
   #product-modal {
     display: none;
@@ -232,7 +281,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow:auto;
     background-color: rgba(0, 0, 0, 0.5);
   }
   
@@ -243,6 +292,8 @@ body {
     border: 1px solid #888;
     width: 60%;
     font-size: large;
+    border-radius: 2rem;
+    align-items: center;
   }
 
   .close{
